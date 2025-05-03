@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+} 
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  padding: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+    
+}
+.nav-links{
+    display:flex;
+    gap:20px;
+
+}
+.nav-links a{
+    text-decoration: none;
+    color:black
+}
+.nav-links a:hover{
+    text-decoration: underline;
+}
+
+/* side navigation */
+.side-nav{
+    display: flex;
+flex-direction: column;
+background-color:#1D232C;
+color: white;
+width: 40%;
+position:fixed;
+top:0;
+left:0;
+height: 100%;
+display: block;
+left:-40%;
+transition:2s;
+
+
+}
+.side-nav-link{
+    text-align: center;
+    margin: 10px;
+}
+.side-nav-link a{
+    text-decoration: none;
+    color: white;
+
+}
+.side-nav-link:hover{
+    text-decoration: underline;
+} 
+#side-close{
+    text-align: end;
+    padding:10px;
+    cursor: pointer;
+}
+#ffoot{
+    text-align: center;
+}
+
+.footer{
+    background-color: #1D231D;
+    width: 50%;
+    height: 250px;
+    padding: 20px;
+margin-top: 20px;
+    margin-left:25%;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+table{
+    margin-left: 25%;
+}
+td{
+    padding:10px;
+    color:white;
+}
+#name,#email{
+    height:20px;
+
+
+}
+
+/* media quary */
+
+/* menubar */
+@media screen and (max-width:700px) {
+    .nav-links{
+        display: none;
+    }
+}
+@media screen and (min-width:700px) {
+    #menu-bar{
+display: none;
+    }
+}

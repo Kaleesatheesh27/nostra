@@ -1,0 +1,282 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+} 
+/* alert */
+.alert{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    animation-name: fade;
+    animation-duration:2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    
+
+}
+
+.alert span{
+    font-size: larger;
+}
+.alert p{
+    cursor: pointer;
+}
+@keyframes fade{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* navigation style */
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  padding: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+    
+}
+.nav-links{
+    display:flex;
+    gap:20px;
+
+}
+.nav-links a{
+    text-decoration: none;
+    color:black
+}
+.nav-links a:hover{
+    text-decoration: underline;
+}
+
+/* side navigation */
+.side-nav{
+    display: flex;
+flex-direction: column;
+background-color:#1D232C;
+color: white;
+width: 40%;
+position:fixed;
+top:0;
+left:0;
+height: 100%;
+display: block;
+left:-40%;
+transition:2s;
+
+
+}
+.side-nav-link{
+    text-align: center;
+    margin: 10px;
+}
+.side-nav-link a{
+    text-decoration: none;
+    color: white;
+
+}
+.side-nav-link:hover{
+    text-decoration: underline;
+} 
+#side-close{
+    text-align: end;
+    padding:10px;
+    cursor: pointer;
+}
+/* body - slideshow*/
+.image-container{
+     width:100%;
+    height:500px;
+    margin-top: 10px;
+   
+    
+    position:relative;
+    overflow: hidden;
+    
+   
+   
+}
+.slide{
+    width: 100%;
+  height: 100%;
+  position: absolute;
+  display:none;
+ 
+}
+.first{
+    display: block;
+}
+.image-arrows__head{
+    text-align: center;
+    color: aliceblue;
+}
+.image-arrows__head h1{
+    font-size:xx-large;
+}
+#parent{
+    position: relative;
+    
+    height: 525px;
+   
+}
+.image-arrows{
+    position: relative;
+    top:-350px;
+}
+.arrows{
+    
+    display: flex;
+    justify-content: space-around;
+   
+    color:white;
+cursor: pointer;
+    
+
+}
+.arrows i{
+    background-color: black;
+    padding:5px;
+
+
+}
+.brands{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+}
+.brand p{
+text-align: center;
+}
+.customer{
+    display: flex;
+    justify-content: space-around;
+    margin-top:30px;
+    align-items: center;
+}
+.status{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    margin-top:10px;
+  
+    
+}
+.gurantee,.New-arrivals,.fast-delivery{
+    background-color: #F2F4F7;
+    margin:10px;
+    padding:10px;
+    border-radius:10px;
+}
+.arrival{
+   
+    
+    
+    margin:20px;
+    position: relative;
+}
+#dress{
+   border: 1px solid black;
+   border-radius:10px;
+    height:300px;
+    width:300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+.arrival-shop{
+    display: flex;
+    border: 2px solid black;
+    align-items: center;
+    gap:10px;
+    justify-content: center ;
+    position: absolute;
+    top:260px;
+    margin-left:25%;
+    border-radius:5px;
+    padding: 3px;
+    cursor: pointer;
+    background-color: #F2F4F7;
+    
+    
+}
+.container{
+    display:flex;
+    overflow:auto;
+    
+    
+}
+.container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+.bottom{
+    text-align: center;
+    margin-top:10px;
+    
+}
+.bottom-header{
+font-size:xx-large;
+}
+#signup{
+    width:75%;
+    padding:10px;
+}
+.bottom button{
+    margin-top: 5px;
+    padding: 10px;
+    width: 100px;
+    background-color:black;
+    color: #F2F4F7;
+    border-radius:5px;
+    cursor: pointer;
+
+    
+}
+#footer{
+    background-color: #1D231D;
+}
+.footer-hero{
+    display: flex;
+   
+    color: white;
+    height:200px;
+    margin-top: 20px;
+    
+}
+.hero1,.hero2{
+margin-top:100px;
+}
+
+
+.hero2 i{
+color: black;
+border: 1px solid black;
+padding:10px;
+border-radius:50px;
+
+height:5px;
+width: 5px;
+
+
+background-color:white;
+}
+/* media quary */
+
+/* menubar */
+@media screen and (max-width:700px) {
+    .nav-links{
+        display: none;
+    }
+}
+@media screen and (min-width:700px) {
+    #menu-bar{
+display: none;
+    }
+}
